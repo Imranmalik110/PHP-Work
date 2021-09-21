@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Add New Student</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form action="#" method="POST">
+      <div class="modal-body">
+        <div class="form-group">
+          <label>firstname</label>
+          <input type="text" name="fname" id="fname" class="form-control" placeholder="Enter your first Name" required>
+        </div>
+        <div class="form-group">
+          <label>LastName</label>
+          <input type="text" name="lname" id="lname" class="form-control" placeholder="Enter your Last Name" required>
+        </div>
+        <div class="form-group">
+          <label>Email Id</label>
+          <input type="text" name="email" id="email" class="form-control" placeholder="Enter your Emaid Id" required>
+        </div>
+        <div class="form-group">
+          <label>Passsword</label>
+          <input type="password" name="password" id="password" class="form-control" placeholder="Enter your Password" required>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close this form</button>
+        <button type="button" class="btn btn-primary">ADD a new Student</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h1 align="center">bootstrap Modal view Controller With Pop modal</h1>
+  <div class="jumbotron">
+  <div class="card">
+    <div class="card-body">
+      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+        Add New Student
+      </button>
+      
+    </div>
+  </div>
+  </div>
+  <table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">firstname</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email Id</th>
+        <th scope="col">Password</th>
+        <th scope="col">Action</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Imran</td>
+        <td>Malik</td>
+        <td>Imran4205102@gmail.com</td>
+        <td>IK@120490</td>
+        <td>
+          <a href="#" class="btn btn-success">Update</a>
+          <a href="#" class="btn btn-danger">Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
